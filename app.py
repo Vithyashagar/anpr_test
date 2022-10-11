@@ -5,8 +5,13 @@ from  ocr_license_plate import get_number
 
 app = Flask(__name__)
 
+@app.route('/', methods =['Get'])
+def home():
+    result = ""
+    return render_template('index.html')
+
 # @app.route('/')
-# def home():
+# def get_home():
 #     result = ""
 #     return render_template('index.html')
 

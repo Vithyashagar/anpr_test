@@ -5,10 +5,10 @@ from  ocr_license_plate import get_number
 
 app = Flask(__name__)
 
-@app.route('/')
-def home():
-    result = ""
-    return render_template('index.html')
+# @app.route('/')
+# def home():
+#     result = ""
+#     return render_template('index.html')
 
 @app.route('/getnumber', methods =['Post'])
 def getnumber():
